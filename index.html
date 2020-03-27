@@ -6,19 +6,31 @@
 
 		<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 		<script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+		<script src="https://www.youtube.com/iframe_api"></script>
+		<script src="./script.js" charset="utf-8"></script>
 		<script src="./video.js" charset="utf-8"></script>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./video.css">
 		<link rel="stylesheet" href="./robot.css">
 		<link rel="stylesheet" href="./style.css">
 	</head>
 	<body>
+		<div id="protohead">
+			<div>
+				<h3>App op telefoon student</h3>
+			</div>
+			<div>
+				<h3>Robot aanwezig in lokaal</h3>
+			</div>
+		</div>
 		<div id="prototype">
 			<div id="video">
 				<div id="videoElement"></div>
 			</div>
 
 			<div id="robot">
-				<a-scene>
+				<a-scene embedded vr-mode-ui="enabled: false">
 					<a-assets>
 						<img id="cardboard" src="A-Frame/cardboard.jpg">
 						<img id="camera" src="A-Frame/camera.png">
@@ -26,12 +38,11 @@
 					</a-assets>
 
 					<a-entity position="0.4 -0.2 0.25" rotation="0 30 0">
-						<a-camera>
-						</a-camera>
+						<a-camera fov="60" wasd-controls-enabled="false" look-controls-enabled="false"></a-camera>
 					</a-entity>
 
 					<!-- body -->
-					<a-box 
+					<a-box
 						material="
 						color: #ffffff;
 						src: #cardboard;"

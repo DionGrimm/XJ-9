@@ -1,10 +1,26 @@
 body {
 	margin: 0;
-	background: #69296F;
+	font-family: 'Poppins', sans-serif;
+}
+
+#protohead {
+	/* height: 100vh; */
+	display: flex;
+}
+
+#protohead > div {
+	flex: 1;
+	text-align: center;
+}
+
+#protohead h3 {
+	color: #323335;
+	font-size: 24px;
+	font-weight: 600;
 }
 
 #prototype {
-	height: 100vh;
+	height: 80vh;
 	display: flex;
 }
 
