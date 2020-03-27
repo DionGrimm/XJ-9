@@ -1,0 +1,13 @@
+body {
+	margin: 0;
+	background: #69296F;
+}
+
+#prototype {
+	height: 100vh;
+	display: flex;
+}
+
+#prototype > div {
+	flex: 1;
+}
