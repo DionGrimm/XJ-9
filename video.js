@@ -32,6 +32,7 @@ let isActive = false
 function onPlayerStateChange(event) {
 	if (event.data == YT.PlayerState.PLAYING) {
 		isActive = true
+
 	}
 	else {
 		isActive = false
@@ -44,13 +45,14 @@ let lastRotation;
 function updateYaw() {
 	window.requestAnimationFrame(updateYaw)
 	if (!isActive) return
-	setTimeout(() => {
-		const prop = player.getSphericalProperties()
-		const deg = prop.yaw / 57.3248
-		rotateHead(deg);
-		if (deg !== lastRotation) {
-			lastRotation = deg;
+
+	const prop = player.getSphericalProperties()
+	const deg = prop.yaw / 57.3248
+	if (deg !== lastRotation) {
+		setTimeout(() => {
 			servoSnd.play();
-		}
-	}, 10);
+			rotateHead(deg);
+		}, 300);
+		lastRotation = deg;
+	}
 }
