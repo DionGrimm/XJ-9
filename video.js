@@ -22,6 +22,8 @@ function startPlayer() {
 	});
 }
 
+const questionSnd1 = new Audio('audio/vraag1.wav');
+const questionSnd2 = new Audio('audio/vraag2.wav');
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
 	event.target.playVideo();
@@ -32,7 +34,6 @@ let isActive = false
 function onPlayerStateChange(event) {
 	if (event.data == YT.PlayerState.PLAYING) {
 		isActive = true
-
 	}
 	else {
 		isActive = false
@@ -41,10 +42,21 @@ function onPlayerStateChange(event) {
 
 const servoSnd = new Audio('audio/servo.wav');
 let lastRotation;
+let question = true;
 
 function updateYaw() {
 	window.requestAnimationFrame(updateYaw)
 	if (!isActive) return
+
+	if (question) {
+		setTimeout(() => {
+			questionSnd1.play()
+			setTimeout(() => {
+				questionSnd2.play()
+			}, 5000);
+		}, 3000);
+		question = false;
+	}
 
 	const prop = player.getSphericalProperties()
 	const deg = prop.yaw / 57.3248
