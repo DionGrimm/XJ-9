@@ -38,10 +38,19 @@ function onPlayerStateChange(event) {
 	}
 }
 
+const servoSnd = new Audio('audio/servo.wav');
+let lastRotation;
+
 function updateYaw() {
 	window.requestAnimationFrame(updateYaw)
 	if (!isActive) return
-
-	let prop = player.getSphericalProperties()
-	rotateHead(prop.yaw / 57.3248)
+	setTimeout(() => {
+		const prop = player.getSphericalProperties()
+		const deg = prop.yaw / 57.3248
+		rotateHead(deg);
+		if (deg !== lastRotation) {
+			lastRotation = deg;
+			servoSnd.play();
+		}
+	}, 10);
 }
