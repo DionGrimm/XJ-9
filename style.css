@@ -4,8 +4,10 @@ body {
 }
 
 #protohead {
-	/* height: 100vh; */
+	margin-top: 30px;
 	display: flex;
+	opacity: 0;
+	transition: opacity .6s;
 }
 
 #protohead > div {
@@ -17,13 +19,43 @@ body {
 	color: #323335;
 	font-size: 24px;
 	font-weight: 600;
+	margin: 35px 0;
 }
 
 #prototype {
 	height: 80vh;
-	display: flex;
+	position: relative;
 }
 
 #prototype > div {
-	flex: 1;
+	position: absolute;
+	top: 0;
+	height: 100%;
+}
+
+#prototype > div:first-child {
+	left: 0;
+	z-index: 11;
+	box-sizing: border-box;
+	padding: 0 17vw;
+	width: 100vw;
+	transition: width 1s, padding 1s;
+}
+
+#prototype > div:last-child {
+	right: 0;
+	width: 50vw;
+	z-index: 10;
+}
+
+#prototype.expand > div:first-child {
+	padding: 0 0vw;
+	width: 50vw;
+	transition: width 1s, padding 1s;
+}
+
+@media only screen and (max-width: 600px) {
+	#hide-on-phone {
+		display: none;
+	}
 }

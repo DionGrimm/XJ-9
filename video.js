@@ -45,3 +45,30 @@ function updateYaw() {
 	let prop = player.getSphericalProperties()
 	rotateHead(prop.yaw / 57.3248)
 }
+
+window.addEventListener('DOMContentLoaded', function() {
+	document.getElementById("startButton").addEventListener("click", function() {
+		document.getElementById("prototype").className = "expand"
+		document.getElementById("start").style.display = "none"
+
+		setTimeout(function () {
+			document.getElementById("protohead").style.opacity = 1
+		}, 1200)
+	})
+
+	document.getElementById("controlsLeft").addEventListener("click", function() {
+		let prop = player.getSphericalProperties()
+
+		player.setSphericalProperties({
+			yaw: prop.yaw + 10,
+		})
+	})
+
+	document.getElementById("controlsRight").addEventListener("click", function() {
+		let prop = player.getSphericalProperties()
+
+		player.setSphericalProperties({
+			yaw: prop.yaw - 10,
+		})
+	})
+})
