@@ -42,40 +42,54 @@ function onPlayerStateChange(event) {
 
 const servoSnd = new Audio('audio/servo.wav');
 let lastRotation;
+let origRot = false
 let question = true;
 
 function updateYaw() {
 	window.requestAnimationFrame(updateYaw)
 	if (!isActive) return
 
-	let prop = player.getSphericalProperties()
-	rotateHead(prop.yaw / 57.3248)
+	const prop = player.getSphericalProperties()
+	const deg = prop.yaw / 57.3248
 
-	// if (question) {
-	// 	setTimeout(() => {
-	// 		questionSnd1.play()
-	// 		setTimeout(() => {
-	// 			questionSnd2.play()
-	// 		}, 5000);
-	// 	}, 3000);
-	// 	question = false;
-	// }
-	//
-	// const prop = player.getSphericalProperties()
-	// const deg = prop.yaw / 57.3248
-	// if (deg !== lastRotation) {
-	// 	setTimeout(() => {
-	// 		servoSnd.play();
-	// 		rotateHead(deg);
-	// 	}, 300);
-	// 	lastRotation = deg;
-	// }
+	if (deg !== lastRotation) {
+		setTimeout(() => {
+			servoSnd.play();
+			rotateHead(deg);
+		}, 300);
+		lastRotation = deg;
+	}
+
+	if (question) {
+		setTimeout(() => {
+			questionSnd1.play()
+			origRot = prop.yaw
+
+
+			setTimeout(() => {
+				if (origRot == player.getSphericalProperties().yaw) {
+					questionSnd2.play()
+				}
+			}, 6000);
+		}, 3000);
+		question = false;
+	}
 }
 
 window.addEventListener('DOMContentLoaded', function() {
 	document.getElementById("startButton").addEventListener("click", function() {
 		document.getElementById("prototype").className = "expand"
 		document.getElementById("start").style.display = "none"
+
+		questionSnd1.play()
+		questionSnd2.play()
+		servoSnd.play()
+
+		setTimeout(() => {
+			questionSnd1.pause()
+			questionSnd2.pause()
+			servoSnd.pause()
+		}, 1)
 
 		setTimeout(function () {
 			document.getElementById("protohead").style.opacity = 1
@@ -96,5 +110,47 @@ window.addEventListener('DOMContentLoaded', function() {
 		player.setSphericalProperties({
 			yaw: prop.yaw - 10,
 		})
+	})
+
+	var ask = false
+	document.getElementById("controlsAsk").addEventListener("click", function() {
+		ask = !ask
+
+		if (ask) {
+			document.getElementById("controlsAsk").getElementsByClassName("controlsAlt")[0].style.display = "block"
+			document.getElementById("controlsAsk").getElementsByClassName("controlsMain")[0].style.display = "none"
+		}
+		else {
+			document.getElementById("controlsAsk").getElementsByClassName("controlsAlt")[0].style.display = "none"
+			document.getElementById("controlsAsk").getElementsByClassName("controlsMain")[0].style.display = "block"
+		}
+	})
+
+	var geluid = false
+	document.getElementById("controlsGeluid").addEventListener("click", function() {
+		geluid = !geluid
+
+		if (geluid) {
+			document.getElementById("controlsGeluid").getElementsByClassName("controlsAlt")[0].style.display = "block"
+			document.getElementById("controlsGeluid").getElementsByClassName("controlsMain")[0].style.display = "none"
+		}
+		else {
+			document.getElementById("controlsGeluid").getElementsByClassName("controlsAlt")[0].style.display = "none"
+			document.getElementById("controlsGeluid").getElementsByClassName("controlsMain")[0].style.display = "block"
+		}
+	})
+
+	var mic = false
+	document.getElementById("controlsMic").addEventListener("click", function() {
+		mic = !mic
+
+		if (mic) {
+			document.getElementById("controlsMic").getElementsByClassName("controlsAlt")[0].style.display = "block"
+			document.getElementById("controlsMic").getElementsByClassName("controlsMain")[0].style.display = "none"
+		}
+		else {
+			document.getElementById("controlsMic").getElementsByClassName("controlsAlt")[0].style.display = "none"
+			document.getElementById("controlsMic").getElementsByClassName("controlsMain")[0].style.display = "block"
+		}
 	})
 })

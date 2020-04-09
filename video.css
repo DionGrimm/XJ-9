@@ -113,3 +113,43 @@
 	left: auto !important;
 	right: 4% !important;
 }
+
+#controls {
+	background: rgba(255,255,255,.68);
+	backdrop-filter: blur(5px);
+	border-radius: 6px;
+	top: auto !important;
+	bottom: 5% !important;
+	height: 20% !important;
+	width: 60% !important;
+	left: 20% !important;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100%;
+}
+
+#controls > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+#controls svg {
+	height: 32%;
+	margin-bottom: 5%;
+}
+
+#controls span {
+	font-weight: bolder;
+	font-size: 10px;
+}
+
+#controls .controlsAlt {
+	display: none;
+}
+
+#controlsEmoji {
+	cursor: not-allowed !important;
+}
