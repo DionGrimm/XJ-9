@@ -22,6 +22,8 @@ function startPlayer() {
 	});
 }
 
+const questionSnd1 = new Audio('audio/vraag1.wav');
+const questionSnd2 = new Audio('audio/vraag2.wav');
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
 	event.target.playVideo();
@@ -38,12 +40,36 @@ function onPlayerStateChange(event) {
 	}
 }
 
+const servoSnd = new Audio('audio/servo.wav');
+let lastRotation;
+let question = true;
+
 function updateYaw() {
 	window.requestAnimationFrame(updateYaw)
 	if (!isActive) return
 
 	let prop = player.getSphericalProperties()
 	rotateHead(prop.yaw / 57.3248)
+
+	// if (question) {
+	// 	setTimeout(() => {
+	// 		questionSnd1.play()
+	// 		setTimeout(() => {
+	// 			questionSnd2.play()
+	// 		}, 5000);
+	// 	}, 3000);
+	// 	question = false;
+	// }
+	//
+	// const prop = player.getSphericalProperties()
+	// const deg = prop.yaw / 57.3248
+	// if (deg !== lastRotation) {
+	// 	setTimeout(() => {
+	// 		servoSnd.play();
+	// 		rotateHead(deg);
+	// 	}, 300);
+	// 	lastRotation = deg;
+	// }
 }
 
 window.addEventListener('DOMContentLoaded', function() {

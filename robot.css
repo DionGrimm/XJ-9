@@ -1,6 +1,6 @@
 #robot {
-	background: url('./room_school.jpg');
-	background-position: center;
-	background-size: cover;
+	background-color: #cee7ec;
+	background-image: url("classroom.jpg");
 	background-repeat: no-repeat;
+	background-size: cover;
 }

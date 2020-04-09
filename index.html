@@ -58109,648 +58109,184 @@
 		<link rel="stylesheet" href="./video.css">
 		<link rel="stylesheet" href="./robot.css">
 		<link rel="stylesheet" href="./style.css">
+	</head>
+	<body>
+		<div id="protohead">
+			<div>
+				<h3>App op telefoon student</h3>
+			</div>
+			<div>
+				<h3>Robot aanwezig in lokaal</h3>
+			</div>
+		</div>
+		<div id="prototype">
+			<div id="video">
+				<div id="videoElement"></div>
+			</div>
 
-</head>
+			<div id="robot">
+				<a-scene embedded vr-mode-ui="enabled: false">
+					<a-assets>
+						<img id="cardboard" src="A-Frame/cardboard.jpg">
+						<img id="metal" src="A-Frame/robot_texture.png">
+						<img id="cardboard-feet" src="A-Frame/cardboard_feet.jpg">
+						<img id="camera" src="A-Frame/camera.png">
+						<img id="led" src="A-Frame/led.png">
+						<img id="animoji" src="A-Frame/animoji.jpg">
+					</a-assets>
 
-<body>
-    <div id="root">
-        <div class="_2vDUc">
-            <main>
-                <div class="wD_Iu _3EP08">
-                    <div>
-                        <div></div>
-                        <div class="_3C6uf">
-                            <header class="vwgid css-9s1hn">
-                                <div class="_1yw3j _2AqDJ">
-                                    <div class="_17N51">
-                                        <div class="yfqO-">
-                                            <a href="/" class="_3TLRE">
-                                                <div class="PxMg8 _31qdd">
-                                                    <div class="_3l4Fr">
-                                                        <p class="_212KX">XJ-9</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="_1VucZ"></div>
-                                    <div class="_1wXT8"></div>
-                                    <div class="_2H1uU _3LCor _2c49G" style="background-color:#FFFFFF;height:calc(0px - 0px">
-                                        <div class="_3axhE">
-                                            <ul class="_1Z3XN">
-                                                <li class="rYxyd _2MYWK">
-                                                    <div class="_3R8nx"><a href="/" class="_1gH6U _1pwir _Z1u1 -Yd7Q _1uxcm"><span class="_2OdWp">Home</span></a></div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="_2xUHh"></div>
-                                    </div>
-                                </div>
-                            </header>
-                        </div>
-                    </div>
-                </div>
-                <div class="wD_Iu _3EP08 css-1c375l0">
-                    <section class="_1AraQ hugeTitleFontSize css-1hz6wgu RFmpO css-1sxfiya block" data-block-type="cover">
-                        <div class="_20iPA _23edd _38_I6">
-                            <div class="_2Uqdb"><img class="CqjoZ" draggable="false" srcSet="https://jimdo-storage.freetls.fastly.net/image/c9c59aab-a71f-41ab-936a-6aa79446acd8.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=2560&amp;height=1709 2560w, https://jimdo-storage.freetls.fastly.net/image/c9c59aab-a71f-41ab-936a-6aa79446acd8.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1920&amp;height=1281 1920w, https://jimdo-storage.freetls.fastly.net/image/c9c59aab-a71f-41ab-936a-6aa79446acd8.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1600&amp;height=1068 1600w, https://jimdo-storage.freetls.fastly.net/image/c9c59aab-a71f-41ab-936a-6aa79446acd8.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1440&amp;height=961 1440w, https://jimdo-storage.freetls.fastly.net/image/c9c59aab-a71f-41ab-936a-6aa79446acd8.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1280&amp;height=854 1280w, https://jimdo-storage.freetls.fastly.net/image/c9c59aab-a71f-41ab-936a-6aa79446acd8.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1024&amp;height=683 1024w, https://jimdo-storage.freetls.fastly.net/image/c9c59aab-a71f-41ab-936a-6aa79446acd8.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=800&amp;height=534 800w, https://jimdo-storage.freetls.fastly.net/image/c9c59aab-a71f-41ab-936a-6aa79446acd8.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=640&amp;height=427 640w, https://jimdo-storage.freetls.fastly.net/image/c9c59aab-a71f-41ab-936a-6aa79446acd8.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=480&amp;height=320 480w, https://jimdo-storage.freetls.fastly.net/image/c9c59aab-a71f-41ab-936a-6aa79446acd8.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=320&amp;height=214 320w, https://jimdo-storage.freetls.fastly.net/image/c9c59aab-a71f-41ab-936a-6aa79446acd8.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=160&amp;height=107 160w" alt="" loading="lazy" /></div>
-                            <div class="_1FL8H css-htkrki"></div>
-                            <div class="_1gld_">
-                                <div class="_2CtTI aj_LK Gz71e">
-                                    <div class="_18IAy">
-                                        <div class="Te80D">
-                                            <div class="_3ZtqF">
-                                                <div class="">
-                                                    <h1>Hoi!</h1>
-                                                    <p>Dit is hoe de 180° camera tot stand kwam.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="_6VwtP"><a href="#" class="_2xUnF"><span class="_2x3-K _2uz_B _2eKau"><svg width="14px" height="7px" viewBox="0 0 14 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g transform="translate(-713.000000, -974.000000)" class="_3QEOl _1u4GB">
-                            <g id="Rectangle-2">
-                                <polygon points="720 981.071068 712.928932 974 727.071068 974"></polygon>
-                            </g>
-                        </g>
-                    </g>
-                </svg></span></a></div>
-                    </section>
-                    <section class="_1AraQ css-9s1hn">
-                        <div class="_2CtTI">
-                            <div class="Te80D">
-                                <div class="_3l4Fr">
-                                    <div class="">
-                                        <h1>Even voorstellen.</h1>
-                                        <p>Wij zijn een multidisciplinair team samengesteld uit drie verschillende opleidingen van&nbsp;
-                                            <br>Hogeschool Rotterdam. Dit project is onderdeel van het honours programma van het Instituut&nbsp;
-                                            <br>voor Communicatie, media en informatietechnologie in samenwerking met Creating 010.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div style="transition:transform 200ms, opacity 200ms;width:100%;transform:translateY(0px);opacity:1">
-                                <div class="_2enyo">
-                                    <div class="jy5EN _2W3YL">
-                                        <div class="_34OFi" style="background-color:#FFFFFF">
-                                            <div class="_3FkOf">
-                                                <div class="_20iPA" style="padding-bottom:100%">
-                                                    <div class="_2Uqdb"><img class="CqjoZ" style="width:100%" draggable="false" srcSet="https://jimdo-storage.freetls.fastly.net/image/83023716/7a00bea0-4db0-4301-91dc-24f3d055cc02.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=640&amp;height=640&amp;trim=0,134,277,0 640w, https://jimdo-storage.freetls.fastly.net/image/83023716/7a00bea0-4db0-4301-91dc-24f3d055cc02.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=480&amp;height=480&amp;trim=0,134,277,0 480w, https://jimdo-storage.freetls.fastly.net/image/83023716/7a00bea0-4db0-4301-91dc-24f3d055cc02.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=320&amp;height=320&amp;trim=0,134,277,0 320w, https://jimdo-storage.freetls.fastly.net/image/83023716/7a00bea0-4db0-4301-91dc-24f3d055cc02.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=160&amp;height=160&amp;trim=0,134,277,0 160w" sizes="(min-width:1441px) 1440px,(min-width:1281px) 1280px,(max-width:900px) 100vw,(max-width:1440px) 900px" alt="" loading="lazy" /></div>
-                                                </div>
-                                            </div>
-                                            <div class="_2RKqv">
-                                                <div class="Te80D">
-                                                    <div class="_3l4Fr">
-                                                        <div class="">
-                                                            <h3>Dion van Meurs</h3>
-                                                            <p><strong>Opleiding</strong>
-                                                                <br>Creative media and game technologies
-                                                                <br>
-                                                                <br><strong>Rol </strong>
-                                                                <br>Creator
-                                                                <br>
-                                                                <br><strong>Contact</strong>
-                                                                <br>0906233@hr.nl
-                                                                <br>
-                                                                <br><strong>Favoriete robot<br></strong>Claptrap</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="jy5EN _2W3YL">
-                                        <div class="_34OFi" style="background-color:#FFFFFF">
-                                            <div class="_3FkOf">
-                                                <div class="_20iPA" style="padding-bottom:100%">
-                                                    <div class="_2Uqdb"><img class="CqjoZ" style="width:100%" draggable="false" srcSet="https://jimdo-storage.freetls.fastly.net/image/83024156/af80751f-f888-460f-a5e1-335de9fc8fc7.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=2560&amp;height=2560&amp;trim=2,0,1,0 2560w, https://jimdo-storage.freetls.fastly.net/image/83024156/af80751f-f888-460f-a5e1-335de9fc8fc7.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1920&amp;height=1920&amp;trim=2,0,1,0 1920w, https://jimdo-storage.freetls.fastly.net/image/83024156/af80751f-f888-460f-a5e1-335de9fc8fc7.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1600&amp;height=1600&amp;trim=2,0,1,0 1600w, https://jimdo-storage.freetls.fastly.net/image/83024156/af80751f-f888-460f-a5e1-335de9fc8fc7.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1440&amp;height=1440&amp;trim=2,0,1,0 1440w, https://jimdo-storage.freetls.fastly.net/image/83024156/af80751f-f888-460f-a5e1-335de9fc8fc7.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1280&amp;height=1280&amp;trim=2,0,1,0 1280w, https://jimdo-storage.freetls.fastly.net/image/83024156/af80751f-f888-460f-a5e1-335de9fc8fc7.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1024&amp;height=1024&amp;trim=2,0,1,0 1024w, https://jimdo-storage.freetls.fastly.net/image/83024156/af80751f-f888-460f-a5e1-335de9fc8fc7.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=800&amp;height=800&amp;trim=2,0,1,0 800w, https://jimdo-storage.freetls.fastly.net/image/83024156/af80751f-f888-460f-a5e1-335de9fc8fc7.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=640&amp;height=640&amp;trim=2,0,1,0 640w, https://jimdo-storage.freetls.fastly.net/image/83024156/af80751f-f888-460f-a5e1-335de9fc8fc7.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=480&amp;height=480&amp;trim=2,0,1,0 480w, https://jimdo-storage.freetls.fastly.net/image/83024156/af80751f-f888-460f-a5e1-335de9fc8fc7.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=320&amp;height=320&amp;trim=2,0,1,0 320w, https://jimdo-storage.freetls.fastly.net/image/83024156/af80751f-f888-460f-a5e1-335de9fc8fc7.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=160&amp;height=160&amp;trim=2,0,1,0 160w" sizes="(min-width:1441px) 1440px,(min-width:1281px) 1280px,(max-width:900px) 100vw,(max-width:1440px) 900px" alt="" loading="lazy" /></div>
-                                                </div>
-                                            </div>
-                                            <div class="_2RKqv">
-                                                <div class="Te80D">
-                                                    <div class="_3l4Fr">
-                                                        <div class="">
-                                                            <h3>Dyann Berendhaus</h3>
-                                                            <p><strong>Opleiding</strong>
-                                                                <br>Communication and multimedia design
-                                                                <br>
-                                                                <br><strong>Rol </strong>
-                                                                <br>UX Researcher / Designer
-                                                                <br>
-                                                                <br><strong>Contact</strong>
-                                                                <br>0948146@hr.nl
-                                                                <br>
-                                                                <br><strong>Favoriete robot<br></strong>Noonoo</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="jy5EN _2W3YL">
-                                        <div class="_34OFi" style="background-color:#FFFFFF">
-                                            <div class="_3FkOf">
-                                                <div class="_20iPA" style="padding-bottom:100%">
-                                                    <div class="_2Uqdb"><img class="CqjoZ" style="width:100%" draggable="false" srcSet="https://jimdo-storage.freetls.fastly.net/image/83036808/b8f1d962-6618-4b19-8f59-03b766c0410a.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=2560&amp;height=2560&amp;trim=0,0,0,0 2560w, https://jimdo-storage.freetls.fastly.net/image/83036808/b8f1d962-6618-4b19-8f59-03b766c0410a.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1920&amp;height=1920&amp;trim=0,0,0,0 1920w, https://jimdo-storage.freetls.fastly.net/image/83036808/b8f1d962-6618-4b19-8f59-03b766c0410a.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1600&amp;height=1600&amp;trim=0,0,0,0 1600w, https://jimdo-storage.freetls.fastly.net/image/83036808/b8f1d962-6618-4b19-8f59-03b766c0410a.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1440&amp;height=1440&amp;trim=0,0,0,0 1440w, https://jimdo-storage.freetls.fastly.net/image/83036808/b8f1d962-6618-4b19-8f59-03b766c0410a.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1280&amp;height=1280&amp;trim=0,0,0,0 1280w, https://jimdo-storage.freetls.fastly.net/image/83036808/b8f1d962-6618-4b19-8f59-03b766c0410a.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1024&amp;height=1024&amp;trim=0,0,0,0 1024w, https://jimdo-storage.freetls.fastly.net/image/83036808/b8f1d962-6618-4b19-8f59-03b766c0410a.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=800&amp;height=800&amp;trim=0,0,0,0 800w, https://jimdo-storage.freetls.fastly.net/image/83036808/b8f1d962-6618-4b19-8f59-03b766c0410a.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=640&amp;height=640&amp;trim=0,0,0,0 640w, https://jimdo-storage.freetls.fastly.net/image/83036808/b8f1d962-6618-4b19-8f59-03b766c0410a.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=480&amp;height=480&amp;trim=0,0,0,0 480w, https://jimdo-storage.freetls.fastly.net/image/83036808/b8f1d962-6618-4b19-8f59-03b766c0410a.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=320&amp;height=320&amp;trim=0,0,0,0 320w, https://jimdo-storage.freetls.fastly.net/image/83036808/b8f1d962-6618-4b19-8f59-03b766c0410a.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=160&amp;height=160&amp;trim=0,0,0,0 160w" sizes="(min-width:1441px) 1440px,(min-width:1281px) 1280px,(max-width:900px) 100vw,(max-width:1440px) 900px" alt="" loading="lazy" /></div>
-                                                </div>
-                                            </div>
-                                            <div class="_2RKqv">
-                                                <div class="Te80D">
-                                                    <div class="_3l4Fr">
-                                                        <div class="">
-                                                            <h3>Lem Severein</h3>
-                                                            <p><strong>Opleiding</strong>
-                                                                <br>Creative media and game technologies
-                                                                <br>
-                                                                <br><strong>Rol </strong>
-                                                                <br>Prototyper
-                                                                <br>
-                                                                <br><strong>Contact</strong>
-                                                                <br>0931993@hr.nl
-                                                                <br>
-                                                                <br><strong>Favoriete robot<br></strong>Karen</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="jy5EN _2W3YL">
-                                        <div class="_34OFi" style="background-color:#FFFFFF">
-                                            <div class="_3FkOf">
-                                                <div class="_20iPA" style="padding-bottom:100%">
-                                                    <div class="_2Uqdb"><img class="CqjoZ" style="width:100%" draggable="false" srcSet="https://jimdo-storage.freetls.fastly.net/image/83038305/c01adff3-eb61-48b8-b9d7-49119f7e80f2.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=640&amp;height=640&amp;trim=0,156,0,204 640w, https://jimdo-storage.freetls.fastly.net/image/83038305/c01adff3-eb61-48b8-b9d7-49119f7e80f2.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=480&amp;height=480&amp;trim=0,156,0,204 480w, https://jimdo-storage.freetls.fastly.net/image/83038305/c01adff3-eb61-48b8-b9d7-49119f7e80f2.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=320&amp;height=320&amp;trim=0,156,0,204 320w, https://jimdo-storage.freetls.fastly.net/image/83038305/c01adff3-eb61-48b8-b9d7-49119f7e80f2.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=160&amp;height=160&amp;trim=0,156,0,204 160w" sizes="(min-width:1441px) 1440px,(min-width:1281px) 1280px,(max-width:900px) 100vw,(max-width:1440px) 900px" alt="" loading="lazy" /></div>
-                                                </div>
-                                            </div>
-                                            <div class="_2RKqv">
-                                                <div class="Te80D">
-                                                    <div class="_3l4Fr">
-                                                        <div class="">
-                                                            <h3>Lizzy van Veen</h3>
-                                                            <p><strong>Opleiding</strong>
-                                                                <br>Communicatie
-                                                                <br>
-                                                                <br>
-                                                                <br><strong>Rol </strong>
-                                                                <br>Smart Connector
-                                                                <br>
-                                                                <br><strong>Contact</strong>
-                                                                <br>0931832@hr.nl
-                                                                <br>
-                                                                <br><strong>Favoriete robot<br></strong>Ballie</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="_1AraQ css-2kzwbg">
-                        <div class="_2CtTI">
-                            <div class="Te80D">
-                                <div class="_3l4Fr">
-                                    <div class="">
-                                        <p class="text-align-center">
-                                            <br>
-                                        </p>
-                                        <h1 class="text-align-center">"Hoe kunnen wij ervoor zorgen dat langdurig zieke studenten meer verbondenheid voelen met de klas met behulp van een robot?"</h1></div>
-                                </div>
-                            </div>
-                            <div class="_3gHX_">
-                                <div class="Te80D">
-                                    <div class="_3l4Fr">
-                                        <div class="">
-                                            <p class="text-align-center">In de gewenste situatie is er een robot beschikbaar voor alle langdurig zieke studenten, waardoor zij gemakkelijk aan lessen mee kunnen doen. Dit zorgt ervoor dat deze groep studenten minder studievertraging oplopen. De robot zal ook invloed hebben op de mentale gesteldheid van de student, omdat isolatie vaak net zo ingrijpend is als de ziekte zelf.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="_1AraQ css-9s1hn">
-                        <div class="_2CtTI">
-                            <div class="Te80D">
-                                <div class="_3l4Fr">
-                                    <div class="">
-                                        <h1>Onderzoek.</h1></div>
-                                </div>
-                            </div>
-                            <div class="_21EOT _2Jqwk">
-                                <div class="yjTLh _1hc8G">
-                                    <div class="_38ybO css-9s1hn">
-                                        <div class="U570_ pCnS9">
-                                            <div class="Te80D">
-                                                <div class="_3l4Fr">
-                                                    <div class="">
-                                                        <h3>Creating 010</h3>
-                                                        <p>Creating 010 doet onderzoek naar maatschappelijke veranderingen rondom digitalisering van informatie- en communicatietechnologie. Ze hechten waarde aan participatie, co-creatie met de gebruiker, bottum-up denken, betekenisvol ontwerpen en culturele diversiteit.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="U570_ _3cORi">
-                                            <div class="Te80D">
-                                                <div class="_3l4Fr">
-                                                    <div class="">
-                                                        <h3>Langdurig zieke studenten</h3>
-                                                        <p>Deze studenten verlangen naar een gevoel van betrokkenheid. Daarbij vinden ze het belangrijk zo veel mogelijk mee te kunnen doen zodat zij minder afhankelijk van anderen zijn. Tegelijkertijd hebben zij behoefte aan maatwerk waar dat nodig is.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="yjTLh _1hc8G">
-                                    <div class="_38ybO css-9s1hn">
-                                        <div class="U570_ pCnS9">
-                                            <div class="Te80D">
-                                                <div class="_3l4Fr">
-                                                    <div class="">
-                                                        <h3>In de klas</h3>
-                                                        <p>De expressie van de robot gaat ervoor zorgen dat de medestudenten en de docent de langdurig zieke student begrijpen. Verder is het belangrijk dat de robot er aantrekkelijk uit ziet en als het mogelijk is niet statisch is.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="U570_ _3cORi">
-                                            <div class="Te80D">
-                                                <div class="_3l4Fr">
-                                                    <div class="">
-                                                        <h3>Thuis</h3>
-                                                        <p>De applicatie om de robot te kunnen bedienen is gebruiksvriendelijk. Functies die studenten hebben aangegeven noodzakelijk te zijn, zijn aanwezig, waarbij er ruimte is om voorkeuren aan te geven.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="_1AraQ css-9s1hn">
-                        <div class="_2CtTI">
-                            <div class="Te80D">
-                                <div class="_3l4Fr">
-                                    <div class="">
-                                        <h1>Concepten.</h1>
-                                        <p>Na de onderzoeksfase zijn we gaan brainstormen om zo tot drie uiteenlopende concepten te komen.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div style="transition:transform 200ms, opacity 200ms;width:100%;transform:translateY(0px);opacity:1">
-                                <div class="_2enyo">
-                                    <div class="jy5EN u0IMK">
-                                        <div class="_34OFi" style="background-color:#FFFFFF">
-                                            <div class="_3FkOf">
-                                                <div class="_20iPA" style="padding-bottom:100%">
-                                                    <div class="_2Uqdb"><img class="CqjoZ" style="width:100%" draggable="false" srcSet="https://jimdo-storage.freetls.fastly.net/image/86206587/8f7b3c95-8110-4697-8683-632ee2c101bd.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=2560&amp;height=2560&amp;trim=0,2016,422,0 2560w, https://jimdo-storage.freetls.fastly.net/image/86206587/8f7b3c95-8110-4697-8683-632ee2c101bd.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1920&amp;height=1920&amp;trim=0,2016,422,0 1920w, https://jimdo-storage.freetls.fastly.net/image/86206587/8f7b3c95-8110-4697-8683-632ee2c101bd.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1600&amp;height=1600&amp;trim=0,2016,422,0 1600w, https://jimdo-storage.freetls.fastly.net/image/86206587/8f7b3c95-8110-4697-8683-632ee2c101bd.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1440&amp;height=1440&amp;trim=0,2016,422,0 1440w, https://jimdo-storage.freetls.fastly.net/image/86206587/8f7b3c95-8110-4697-8683-632ee2c101bd.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1280&amp;height=1280&amp;trim=0,2016,422,0 1280w, https://jimdo-storage.freetls.fastly.net/image/86206587/8f7b3c95-8110-4697-8683-632ee2c101bd.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1024&amp;height=1024&amp;trim=0,2016,422,0 1024w, https://jimdo-storage.freetls.fastly.net/image/86206587/8f7b3c95-8110-4697-8683-632ee2c101bd.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=800&amp;height=800&amp;trim=0,2016,422,0 800w, https://jimdo-storage.freetls.fastly.net/image/86206587/8f7b3c95-8110-4697-8683-632ee2c101bd.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=640&amp;height=640&amp;trim=0,2016,422,0 640w, https://jimdo-storage.freetls.fastly.net/image/86206587/8f7b3c95-8110-4697-8683-632ee2c101bd.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=480&amp;height=480&amp;trim=0,2016,422,0 480w, https://jimdo-storage.freetls.fastly.net/image/86206587/8f7b3c95-8110-4697-8683-632ee2c101bd.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=320&amp;height=320&amp;trim=0,2016,422,0 320w, https://jimdo-storage.freetls.fastly.net/image/86206587/8f7b3c95-8110-4697-8683-632ee2c101bd.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=160&amp;height=160&amp;trim=0,2016,422,0 160w" sizes="(min-width:1441px) 1440px,(min-width:1281px) 1280px,(max-width:900px) 100vw,(max-width:1440px) 900px" alt="" loading="lazy" /></div>
-                                                </div>
-                                            </div>
-                                            <div class="_2RKqv">
-                                                <div class="Te80D">
-                                                    <div class="_3l4Fr">
-                                                        <div class="">
-                                                            <h3>Funko Pop</h3>
-                                                            <p>Een Funko Pop die de langdurig zieke student zelf kan uitzoeken met een beeldschermpje als gezicht die de mimiek van een gezicht weer kan geven met behulp van Animoji.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="jy5EN u0IMK">
-                                        <div class="_34OFi" style="background-color:#FFFFFF">
-                                            <div class="_3FkOf">
-                                                <div class="_20iPA" style="padding-bottom:100%">
-                                                    <div class="_2Uqdb"><img class="CqjoZ" style="width:100%" draggable="false" srcSet="https://jimdo-storage.freetls.fastly.net/image/81981445/30ac8a8e-df0c-4775-8286-7284aa2d275a.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1024&amp;height=1024&amp;trim=0,266,0,267 1024w, https://jimdo-storage.freetls.fastly.net/image/81981445/30ac8a8e-df0c-4775-8286-7284aa2d275a.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=800&amp;height=800&amp;trim=0,266,0,267 800w, https://jimdo-storage.freetls.fastly.net/image/81981445/30ac8a8e-df0c-4775-8286-7284aa2d275a.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=640&amp;height=640&amp;trim=0,266,0,267 640w, https://jimdo-storage.freetls.fastly.net/image/81981445/30ac8a8e-df0c-4775-8286-7284aa2d275a.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=480&amp;height=480&amp;trim=0,266,0,267 480w, https://jimdo-storage.freetls.fastly.net/image/81981445/30ac8a8e-df0c-4775-8286-7284aa2d275a.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=320&amp;height=320&amp;trim=0,266,0,267 320w, https://jimdo-storage.freetls.fastly.net/image/81981445/30ac8a8e-df0c-4775-8286-7284aa2d275a.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=160&amp;height=160&amp;trim=0,266,0,267 160w" sizes="(min-width:1441px) 1440px,(min-width:1281px) 1280px,(max-width:900px) 100vw,(max-width:1440px) 900px" alt="" loading="lazy" /></div>
-                                                </div>
-                                            </div>
-                                            <div class="_2RKqv">
-                                                <div class="Te80D">
-                                                    <div class="_3l4Fr">
-                                                        <div class="">
-                                                            <h3>180<strong>° </strong>camera</h3>
-                                                            <p>Een camera op de robot die een groot deel van zijn omgeving kan filmen, waardoor langdurig zieke studenten om zich heen kunnen kijken zonder dat de robot al hoeft te bewegen.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="jy5EN u0IMK">
-                                        <div class="_34OFi" style="background-color:#FFFFFF">
-                                            <div class="_3FkOf">
-                                                <div class="_20iPA" style="padding-bottom:100%">
-                                                    <div class="_2Uqdb"><img class="CqjoZ" style="width:100%" draggable="false" srcSet="https://jimdo-storage.freetls.fastly.net/image/86206351/de5a683d-82ef-4c15-be5d-9c07289f1a03.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1440&amp;height=1440&amp;trim=0,181,0,295 1440w, https://jimdo-storage.freetls.fastly.net/image/86206351/de5a683d-82ef-4c15-be5d-9c07289f1a03.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1280&amp;height=1280&amp;trim=0,181,0,295 1280w, https://jimdo-storage.freetls.fastly.net/image/86206351/de5a683d-82ef-4c15-be5d-9c07289f1a03.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=1024&amp;height=1024&amp;trim=0,181,0,295 1024w, https://jimdo-storage.freetls.fastly.net/image/86206351/de5a683d-82ef-4c15-be5d-9c07289f1a03.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=800&amp;height=800&amp;trim=0,181,0,295 800w, https://jimdo-storage.freetls.fastly.net/image/86206351/de5a683d-82ef-4c15-be5d-9c07289f1a03.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=640&amp;height=640&amp;trim=0,181,0,295 640w, https://jimdo-storage.freetls.fastly.net/image/86206351/de5a683d-82ef-4c15-be5d-9c07289f1a03.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=480&amp;height=480&amp;trim=0,181,0,295 480w, https://jimdo-storage.freetls.fastly.net/image/86206351/de5a683d-82ef-4c15-be5d-9c07289f1a03.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=320&amp;height=320&amp;trim=0,181,0,295 320w, https://jimdo-storage.freetls.fastly.net/image/86206351/de5a683d-82ef-4c15-be5d-9c07289f1a03.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=160&amp;height=160&amp;trim=0,181,0,295 160w" sizes="(min-width:1441px) 1440px,(min-width:1281px) 1280px,(max-width:900px) 100vw,(max-width:1440px) 900px" alt="" loading="lazy" /></div>
-                                                </div>
-                                            </div>
-                                            <div class="_2RKqv">
-                                                <div class="Te80D">
-                                                    <div class="_3l4Fr">
-                                                        <div class="">
-                                                            <h3>Robot control dock</h3>
-                                                            <p>Een docking station voor je mobile telefoon met fysieke bedieningsknoppen zodat langdurig zieke studenten vanuit huis in een handomdraai contact kunnen leggen met de klas.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="_1AraQ css-2kzwbg">
-                        <div class="_2CtTI">
-                            <div class="Te80D">
-                                <div class="_3l4Fr">
-                                    <div class="">
-                                        <h1 class="text-align-center">180<strong>° </strong>camera.</h1></div>
-                                </div>
-                            </div>
-                            <div class="_3gHX_">
-                                <div class="Te80D">
-                                    <div class="_3l4Fr">
-                                        <div class="">
-                                            <p class="text-align-center">Met Creating 010 hebben wij besloten ons te focussen op de 180<strong>° </strong>camera. Met dit concept gaan we langdurig zieke studenten het gevoel geven dat ze echt in de klas zijn. Dit doen wij door de vertraging tussen bediening en robot zo ver mogelijk weg te nemen.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="_1AraQ css-9s1hn">
-                        <div class="_2CtTI">
-                            <div class="_3Hjsn RER_g">
-                                <div class="_3yzvv">
-                                    <div style="transition:transform 200ms, opacity 200ms;width:100%;transform:translateY(0px);opacity:1">
-                                        <div class="_20iPA" style="padding-bottom:126.06%">
-                                            <div class="_2Uqdb"><img class="CqjoZ" style="width:100%" draggable="false" srcSet="https://jimdo-storage.freetls.fastly.net/image/86343266/f09dadc7-36d0-4cea-aa9b-33a3e650081e.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=812&amp;height=1024&amp;trim=0,0,0,0 812w, https://jimdo-storage.freetls.fastly.net/image/86343266/f09dadc7-36d0-4cea-aa9b-33a3e650081e.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=635&amp;height=800&amp;trim=0,0,0,0 635w, https://jimdo-storage.freetls.fastly.net/image/86343266/f09dadc7-36d0-4cea-aa9b-33a3e650081e.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=508&amp;height=640&amp;trim=0,0,0,0 508w, https://jimdo-storage.freetls.fastly.net/image/86343266/f09dadc7-36d0-4cea-aa9b-33a3e650081e.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=381&amp;height=480&amp;trim=0,0,0,0 381w, https://jimdo-storage.freetls.fastly.net/image/86343266/f09dadc7-36d0-4cea-aa9b-33a3e650081e.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=254&amp;height=320&amp;trim=0,0,0,0 254w, https://jimdo-storage.freetls.fastly.net/image/86343266/f09dadc7-36d0-4cea-aa9b-33a3e650081e.png?quality=80&amp;auto=webp&amp;disable=upscale&amp;width=127&amp;height=160&amp;trim=0,0,0,0 127w" sizes="(min-width:1441px) 720px,(min-width:1281px) 640px,(max-width:900px) 100vw,(max-width:1280px) 900px,(max-width:1440px) 450px" alt="" loading="lazy" /></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="_34hDJ">
-                                    <div class="Te80D">
-                                        <div class="_3l4Fr">
-                                            <div class="">
-                                                <h1>Ontwerpproces.</h1></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="_1AraQ css-9s1hn" id="hide-on-phone">
-											<div class="Te80D">
-                                <div class="_3l4Fr">
-                                    <div class="">
-                                        <h1 class="text-align-center">Prototype.</h1></div>
-                                </div>
-                            </div>
-														<div class="_3gHX_">
-                                <div class="Te80D">
-                                    <div class="_3l4Fr">
-                                        <div class="">
-                                            <p class="text-align-center">Omdat we door omstandigheden geen fysiek prototype kunnen maken is hieronder een digitale versie te zien. Links is de directe videofeed te zien die de langdureig zieke student op zijn/haar telefoon zou zien, en rechts is hoe de robot er in de klas uit zou zien.</p>
-																						<p class="text-align-center"><strong>Sleep met je muis de video heen en weer</strong> om het prototype in actie te zien.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+					<a-entity position="0.2 -0.2 0.1" rotation="0 30 0">
+						<a-camera fov="60" wasd-controls-enabled="false" look-controls-enabled="false"></a-camera>
+					</a-entity>
 
-											<div id="protohead">
-												<div>
-													<h3>App op telefoon student</h3>
-												</div>
-												<div>
-													<h3>Robot aanwezig in lokaal</h3>
-												</div>
-											</div>
-											<div id="prototype">
-												<div id="video">
-													<div id="videoElement"></div>
-												</div>
+					<!-- body -->
+					<a-box
+						material="
+						color: #ffffff;
+						src: #metal;"
+						width="2"
+						height="3"
+						depth="0.8"
+						scale="0.1 0.1 0.1"
+						position="-0.2 1.3 -0.5">
 
-												<div id="robot">
-													<a-scene embedded vr-mode-ui="enabled: false">
-														<a-assets>
-															<img id="cardboard" src="A-Frame/cardboard.jpg">
-															<img id="camera" src="A-Frame/camera.png">
-															<img id="led" src="A-Frame/led.png">
-														</a-assets>
+						<!-- head -->
+						<a-cylinder
+							id="robot-head"
+							material="
+							color: #ffffff;
+							src: #metal;"
+							height="0.5"
+							radius="0.25"
+							position="0 1.75 0"
+							rotation="0 0 0">
 
-														<a-entity position="0.4 -0.2 0.25" rotation="0 30 0">
-															<a-camera fov="60" wasd-controls-enabled="false" look-controls-enabled="false"></a-camera>
-														</a-entity>
+							<a-box
+								material="
+								color: #ffffff;
+								src: #metal;"
+								width="0.8"
+								height="0.4"
+								depth="0.8"
+								position="0 0.25 0">
 
-														<!-- body -->
-														<a-box
-															material="
-															color: #ffffff;
-															src: #cardboard;"
-															width="2"
-															height="3"
-															depth="0.8"
-															scale="0.1 0.1 0.1"
-															position="0 1.25 -0.5">
+								<!-- led light -->
+								<a-cylinder
+									material="
+									color: #ffffff;
+									src: #led;"
+									height="0.1"
+									radius="0.1"
+									segments-radial="8"
+									position="0 0.25 0">
+								</a-cylinder>
+							</a-box>
 
-															<!-- head -->
-															<a-cylinder
-																id="robot-head"
-																material="
-																color: #ffffff;
-																src: #cardboard;"
-																height="0.5"
-																radius="0.25"
-																position="0 1.75 0"
-																rotation="0 0 0">
+							<!-- screen -->
+							<a-box
+								material="
+								src: #animoji;"
+								width="1.2"
+								height="0.675"
+								depth="0.1"
+								position="0 0.25 0.4">
+							</a-box>
+						</a-cylinder>
 
-																<a-box
-																	material="
-																	color: #ffffff;
-																	src: #cardboard;"
-																	width="0.8"
-																	height="0.4"
-																	depth="0.8"
-																	position="0 0.25 0">
+						<!-- legs -->
+						<a-cylinder
+							material="
+							color: #ffffff;
+							src: #metal;"
+							height="0.6"
+							radius="0.25"
+							position="-0.5 -1.8 0">
 
-																	<!-- led light -->
-																	<a-cylinder
-																		material="
-																		color: #ffffff;
-																		src: #led;"
-																		height="0.1"
-																		radius="0.1"
-																		segments-radial="8"
-																		position="0 0.25 0">
-																	</a-cylinder>
-																</a-box>
+							<a-box
+								material="
+								color: #ffffff;
+								src: #cardboard-feet;"
+								width="0.5"
+								height="0.25"
+								depth="0.8"
+								position="0 -0.4 0.1">
+							</a-box>
+						</a-cylinder>
 
-																<!-- screen -->
-																<a-box
-																	color="#000000"
-																	width="1.2"
-																	height="0.675"
-																	depth="0.1"
-																	position="0 0.25 0.4">
-																</a-box>
-															</a-cylinder>
+						<a-cylinder
+							material="
+							color: #ffffff;
+							src: #metal;"
+							height="0.6"
+							radius="0.25"
+							position="0.5 -1.8 0">
 
-															<!-- legs -->
-															<a-cylinder
-																material="
-																color: #ffffff;
-																src: #cardboard;"
-																height="0.6"
-																radius="0.25"
-																position="-0.5 -1.8 0">
+							<a-box
+								material="
+								color: #ffffff;
+								src: #cardboard-feet;"
+								width="0.5"
+								height="0.25"
+								depth="0.8"
+								position="0 -0.4 0.1">
+							</a-box>
+						</a-cylinder>
 
-																<a-box
-																	material="
-																	color: #ffffff;
-																	src: #cardboard;"
-																	width="0.5"
-																	height="0.25"
-																	depth="0.8"
-																	position="0 -0.4 0.1">
-																</a-box>
-															</a-cylinder>
+						<!-- arms -->
+						<a-cylinder
+							material="
+							color: #ffffff;
+							src: #metal;"
+							height="0.8"
+							radius="0.25"
+							position="1.25 1 0"
+							rotation="0 0 60">
 
-															<a-cylinder
-																material="
-																color: #ffffff;
-																src: #cardboard;"
-																height="0.6"
-																radius="0.25"
-																position="0.5 -1.8 0">
+							<a-cylinder
+								material="
+								color: #ffffff;
+								src: #metal;"
+								height="1"
+								radius="0.25"
+								position="-0.125 -0.5 0"
+								rotation="0 0 -30">
+							</a-cylinder>
+						</a-cylinder>
 
-																<a-box
-																	material="
-																	color: #ffffff;
-																	src: #cardboard;"
-																	width="0.5"
-																	height="0.25"
-																	depth="0.8"
-																	position="0 -0.4 0.1">
-																</a-box>
-															</a-cylinder>
+						<a-cylinder
+							material="
+							color: #ffffff;
+							src: #metal;"
+							height="0.8"
+							radius="0.25"
+							position="-1.25 1 0"
+							rotation="180 0 240">
 
-															<!-- arms -->
-															<a-cylinder
-																material="
-																color: #ffffff;
-																src: #cardboard;"
-																height="0.8"
-																radius="0.25"
-																position="1.25 1 0"
-																rotation="0 0 60">
+							<a-cylinder
+								material="
+								color: #ffffff;
+								src: #metal;"
+								height="1"
+								radius="0.25"
+								position="-0.125 -0.5 0"
+								rotation="0 0 -30">
+							</a-cylinder>
+						</a-cylinder>
 
-																<a-cylinder
-																	material="
-																	color: #ffffff;
-																	src: #cardboard;"
-																	height="1"
-																	radius="0.25"
-																	position="-0.125 -0.5 0"
-																	rotation="0 0 -30">
-																</a-cylinder>
-															</a-cylinder>
-
-															<a-cylinder
-																material="
-																color: #ffffff;
-																src: #cardboard;"
-																height="0.8"
-																radius="0.25"
-																position="-1.25 1 0"
-																rotation="180 0 240">
-
-																<a-cylinder
-																	material="
-																	color: #ffffff;
-																	src: #cardboard;"
-																	height="1"
-																	radius="0.25"
-																	position="-0.125 -0.5 0"
-																	rotation="0 0 -30">
-																</a-cylinder>
-															</a-cylinder>
-
-															<!-- camera -->
-															<a-box
-																material="
-																color: #ffffff;
-																src: #camera;"
-																width="0.1"
-																height="0.1"
-																depth="0.05"
-																position="0 1 0.425">
-															</a-box>
-														</a-box>
-													</a-scene>
-												</div>
-											</div>
-											<script src="./robot.js" charset="utf-8"></script>
-                    </section>
-                    <section class="_1AraQ css-9s1hn">
-                        <div class="_2CtTI">
-                            <div class="_3Hjsn RER_g">
-                                <div class="_3yzvv">
-                                    <div style="transition:transform 200ms, opacity 200ms;width:100%;transform:translateY(0px);opacity:1">
-                                        <div class="_20iPA" style="padding-bottom:90.76%">
-                                            <div class="_2Uqdb"><img class="CqjoZ" style="width:78.66%" draggable="false" srcSet="https://jimdo-storage.freetls.fastly.net/image/86201048/267e9518-a55e-458d-8d27-6bb6f269fbad.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=416&amp;height=480&amp;trim=0,0,0,0 416w, https://jimdo-storage.freetls.fastly.net/image/86201048/267e9518-a55e-458d-8d27-6bb6f269fbad.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=277&amp;height=320&amp;trim=0,0,0,0 277w, https://jimdo-storage.freetls.fastly.net/image/86201048/267e9518-a55e-458d-8d27-6bb6f269fbad.jpg?format=pjpg&amp;quality=80&amp;auto=webp&amp;disable=upscale&amp;width=139&amp;height=160&amp;trim=0,0,0,0 139w" sizes="(min-width:1441px) 720px,(min-width:1281px) 640px,(max-width:900px) 100vw,(max-width:1280px) 900px,(max-width:1440px) 450px" alt="" loading="lazy" /></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="_34hDJ">
-                                    <div class="Te80D">
-                                        <div class="_3l4Fr">
-                                            <div class="">
-                                                <h1>Work in progress.</h1>
-                                                <p>Ons team doet erg haar best om de belangen van de verschillende belanghebbenden te vertegenwoordigen. Momenteel zijn we bezig met de resultaten van de concepttest te verwerken in het volgende prototype.
-                                                    <br>
-                                                    <br>Biep uit.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="wD_Iu _3EP08">
-                    <div class="_1AraQ css-9s1hn aPrtR _2gQ3T _1uvpH css-9s1hn">
-                        <div class="_2CtTI">
-                            <footer class="_2FTHx">
-                                <div class="_1KNgF"></div>
-                                <div class="U5Qta">
-                                    <div class="_30Qz7"><a href="/impressum/" class="_2lPyo _2Au_O _11m2E _1k5Sc">Impressum</a><a href="/privacybeleid/" class="_2lPyo _2Au_O _11m2E _1k5Sc">Privacybeleid</a><a href="/cookiebeleid/" class="_2lPyo _2Au_O _11m2E _1k5Sc">Cookiebeleid</a><a href="/cookie-instellingen/" class="_2lPyo _2Au_O _11m2E _1k5Sc">Cookie-instellingen</a></div>
-                                </div>
-                            </footer>
-                        </div>
-                        <div class="QUCzn">
-                            <div class="_2CtTI">
-                                <div data-gi-selector="static-jimdo-footer-ad" class="_33va5 _2dd9T"><a href="https://jimdo.com/?utm_source=dol-xj-9%20en_US&amp;utm_medium=footer%20ad&amp;utm_campaign=ownads%20webview" class="_1cUHk">Jimdo</a>
-                                    <div class="_1qG1b">
-                                        <div>
-                                            <p>You can do it, too! Sign up for free now at <a href="https://jimdo.com/?utm_source=dol-xj-9%20en_US&amp;utm_medium=footer%20ad&amp;utm_campaign=ownads%20webview">https://jimdo.nl/</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </div>
-    </div>
-    <script src="https://jimdo-dolphin-static-assets-prod.freetls.fastly.net/renderer/static/e9d297d3adbaec2e2eab.js"></script>
-</body>
-
+						<!-- camera -->
+						<a-box
+							material="
+							color: #ffffff;
+							src: #camera;"
+							width="0.1"
+							height="0.1"
+							depth="0.05"
+							position="0 1 0.425">
+						</a-box>
+					</a-box>
+				</a-scene>
+			</div>
+		</div>
+	</body>
+	<script src="./robot.js" charset="utf-8"></script>
 </html>
