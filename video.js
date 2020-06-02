@@ -44,6 +44,7 @@ const servoSnd = new Audio('audio/servo.wav');
 let lastRotation;
 let origRot = false
 let question = true;
+let started = false;
 
 function updateYaw() {
 	window.requestAnimationFrame(updateYaw)
@@ -52,7 +53,7 @@ function updateYaw() {
 	const prop = player.getSphericalProperties()
 	const deg = prop.yaw / 57.3248
 
-	if (deg !== lastRotation) {
+	if (started && deg !== lastRotation) {
 		setTimeout(() => {
 			servoSnd.play();
 			rotateHead(deg);
@@ -60,7 +61,7 @@ function updateYaw() {
 		lastRotation = deg;
 	}
 
-	if (question) {
+	if (question && started) {
 		setTimeout(() => {
 			questionSnd1.play()
 			origRot = prop.yaw
@@ -80,6 +81,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	document.getElementById("startButton").addEventListener("click", function() {
 		document.getElementById("prototype").className = "expand"
 		document.getElementById("start").style.display = "none"
+		started = true
 
 		questionSnd1.play()
 		questionSnd2.play()
